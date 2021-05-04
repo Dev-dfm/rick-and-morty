@@ -8,7 +8,7 @@ const mainElement = createElement('main', {
       className: 'hero',
       children: [
         createElement('h1', {
-          className: 'hero_title',
+          className: 'hero__title',
           innerText: 'Rick and Morty Fun',
         }),
         createElement('input', {
