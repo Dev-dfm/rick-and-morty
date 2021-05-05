@@ -1,0 +1,34 @@
+.character-card {
+  display: flex;
+  border-radius: 0.5em;
+  background-image: linear-gradient(
+    90deg,
+    var(--background-color),
+    transparent
+  );
+
+  /* background: linear-gradient(to right bottom, rgba(45, 82, 97, 0.6), rgba(45, 82, 97, 0.2)) */
+}
+
+.character-card img {
+  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  height: 14em;
+}
+
+.character-card__info {
+  padding: 1em;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: start;
+  align-items: center;
+}
+.character-card__info * {
+  margin: 0;
+}
+
+.character-card__location,
+.character-card__name {
+  display: grid;
+  justify-items: start;
+}

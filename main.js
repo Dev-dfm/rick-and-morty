@@ -1,6 +1,71 @@
+import { createCharacterElement } from './components/character';
 import './style.css';
+import { createElement } from './utils/elements';
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+const characters = [
+  {
+    imgSrc: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
+    name: 'Rick Sanchez',
+    status: 'Alive',
+    species: 'Human',
+    origin: {
+      name: 'Earth',
+    },
+  },
+  {
+    imgSrc: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    name: 'Morty Smith',
+    status: 'Alive',
+    species: 'Human',
+    origin: {
+      name: 'Earth',
+    },
+  },
+  {
+    imgSrc: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    name: 'Morty Smith',
+    status: 'Alive',
+    species: 'Human',
+    origin: {
+      name: 'Earth',
+    },
+  },
+  {
+    imgSrc: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    name: 'Morty Smith',
+    status: 'Alive',
+    species: 'Human',
+    origin: {
+      name: 'Earth',
+    },
+  },
+];
+
+const mainElement = createElement('main', {
+  className: 'main',
+  children: [
+    createElement('header', {
+      className: 'hero',
+      children: [
+        createElement('h1', {
+          className: 'hero__title',
+          innerText: 'Rick and Morty Fun',
+        }),
+        createElement('input', {
+          className: 'input',
+          placeholder: 'Search character',
+        }),
+      ],
+    }),
+    createElement('section', {
+      className: 'characters',
+      children: characters.map(createCharacterElement),
+    }),
+    createElement('footer', {
+      className: 'footer',
+      children: [createElement('p', { innerText: 'look at me, I´m a footer' })],
+    }),
+  ],
+});
+
+document.querySelector('#app').append(mainElement);
