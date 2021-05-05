@@ -18,7 +18,6 @@
 
 .character-card__info {
   padding: 1em;
-  display: grid;
   grid-auto-flow: row;
   justify-items: start;
   align-items: center;
