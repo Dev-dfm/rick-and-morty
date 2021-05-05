@@ -21,6 +21,24 @@ const characters = [
       name: 'Earth',
     },
   },
+  {
+    imgSrc: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    name: 'Morty Smith',
+    status: 'Alive',
+    species: 'Human',
+    origin: {
+      name: 'Earth',
+    },
+  },
+  {
+    imgSrc: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    name: 'Morty Smith',
+    status: 'Alive',
+    species: 'Human',
+    origin: {
+      name: 'Earth',
+    },
+  },
 ];
 
 const mainElement = createElement('main', {
@@ -40,7 +58,7 @@ const mainElement = createElement('main', {
       ],
     }),
     createElement('section', {
-      className: 'results',
+      className: 'characters',
       children: characters.map(createCharacterElement),
     }),
     createElement('footer', {

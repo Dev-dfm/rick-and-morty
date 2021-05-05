@@ -10,7 +10,7 @@
   --secondary-color: #2a9d8f;
   --text-color: #fffcf9;
   --background-color: #2d5261;
-  --border-color: #6d435a;
+  --secondary-background-color: #1b6466;
 
   /* Border */
   --border-radius: 0.5rem;
@@ -69,13 +69,17 @@ body {
   text-align: center;
 }
 
-.results {
+.characters {
   background: var(--secondary-color);
-  padding: 5em 8em;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 2em;
+  padding: 5em;
 }
 
 .footer {
-  padding: 5em 8em;
+  padding: 2em 8em;
 }
 
 .footer__trademark {
