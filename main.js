@@ -63,7 +63,9 @@ const mainElement = createElement('main', {
     }),
     createElement('footer', {
       className: 'footer',
-      children: [createElement('p', { innerText: 'look at me, I´m a footer' })],
+      children: [
+        createElement('p', { innerText: 'look at me, I´m a footer 👽️' }),
+      ],
     }),
   ],
 });
