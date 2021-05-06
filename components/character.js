@@ -20,7 +20,7 @@ export function createCharacterElement({
             className: 'character-card__name',
             children: [
               createElement('a', {
-                href: `details.html?id=${id}`,
+                href: `/details.html?id=${id}`,
                 children: [
                   createElement('h2', {
                     innerText: name,
