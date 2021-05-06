@@ -23,3 +23,8 @@
 .character-card__info * {
   margin: 0;
 }
+
+.character-card__name a {
+  text-decoration: none;
+  color: var(--text-color);
+}
