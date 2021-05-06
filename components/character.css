@@ -6,8 +6,6 @@
     var(--background-color),
     transparent
   );
-
-  /* background: linear-gradient(to right bottom, rgba(45, 82, 97, 0.6), rgba(45, 82, 97, 0.2)) */
 }
 
 .character-card__image {
@@ -17,17 +15,11 @@
 }
 
 .character-card__info {
+  display: grid;
   padding: 1em;
-  grid-auto-flow: row;
-  justify-items: start;
   align-items: center;
+  text-align: start;
 }
 .character-card__info * {
   margin: 0;
-}
-
-.character-card__location,
-.character-card__name {
-  display: grid;
-  justify-items: start;
 }
