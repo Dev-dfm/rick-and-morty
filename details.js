@@ -4,6 +4,7 @@ import { createElement } from './utils/elements';
 import { getCharacter } from './utils/api';
 import { createCharacterDetails } from './components/characterDetails';
 
+// sucht die URL nach dem Parameter Search ab und gibt ein Obj wieder
 const params = new URLSearchParams(location.search);
 const characterId = params.get('id');
 

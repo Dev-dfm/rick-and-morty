@@ -27,11 +27,17 @@ const mainElement = createElement('main', {
           className: 'input',
           placeholder: 'Search character',
           autofocus: true,
+          // Event: Sobald etwas ins Suchfeld eingegeben wird
           oninput: debounce((event) => {
+            // löscht den Inhalt des Elements (characterSection)
             removeAllChildren(characterSection);
+            // Nimmt den Begriff des Suchfelds
             const search = event.target.value;
+            // Sucht die API nach dem Suchbegriff ab
             getCharacters(search).then((characters) => {
+              // Füllt die Character-Card mit den API Daten
               const characterElements = characters.map(createCharacterElement);
+              // Erweitere die Character-Section um weitere Card-Elemente
               characterSection.append(...characterElements);
             });
           }, 300),
